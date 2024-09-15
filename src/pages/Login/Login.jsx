@@ -49,7 +49,7 @@ const Login = () => {
         </div>
       </form>
       <p className="text-center mt-4">
-        Do not have an account <Link className="text-blue-600" to="/register">Register</Link>{" "}
+        Do not have an account <Link className="text-blue-600 font-medium" to="/register">Register</Link>{" "}
       </p>
     </div>
   );
