@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import userLogo from "../../assets/user.png"
+import userLogo from "../../assets/user.png";
 
 const Navbar = () => {
   const navLinks = (
@@ -13,6 +13,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/career">Career</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
       </li>
     </>
   );
@@ -48,16 +51,16 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <Link>
-          <div className="items-center flex gap-4">
-            <div className="avatar">
-              <div className="w-10 rounded-full">
-                <img src={userLogo} />
-              </div>
+        <div className="items-center flex gap-4">
+          <div className="avatar">
+            <div className="w-10 rounded-full">
+              <img src={userLogo} />
             </div>
-            <button className="btn">Login</button>
           </div>
-        </Link>
+          <Link to="/login">
+            <button className="btn">Login</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
